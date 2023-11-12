@@ -3,9 +3,6 @@ import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
 import Header from "./components/Header";
 
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-
 interface Props {
   children: React.ReactNode;
   params: {
@@ -25,7 +22,7 @@ export async function generateStaticParams() {
 function RootLayout({ children, params }: Props) {
   return (
     <html lang={params.lang}>
-      <body className={inter.className}>
+      <body className="font-body">
         <Header lang={params.lang} />
         <main>{children}</main>
       </body>
