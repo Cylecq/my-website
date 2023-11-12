@@ -12,6 +12,9 @@ const config: Config = {
         display: ["Reem Kufi Fun", "sans-serif"],
         body: ["Rubik", "sans-serif"],
       },
+      colors: {
+        primary: "#e76f51",
+      },
     },
   },
   plugins: [],
