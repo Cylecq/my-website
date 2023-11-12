@@ -1,11 +1,13 @@
 {
   "navigation": {
-    "home": "Accueil",
-    "about": "À propos"
+    "about": "Résumé",
+    "skills": "Compétences",
+    "cv": "CV",
+    "contact": "Contact"
   },
   "page": {
     "home": {
-      "title": "Accueil",
+      "title": "Cyril Leclercq",
       "description": "Bienvenue sur la page d'accueil !"
     },
     "about": {
