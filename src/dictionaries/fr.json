@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "page": {
+    "home": {
+      "title": "Accueil",
+      "description": "Bienvenue sur la page d'accueil !"
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Bienvenue sur la page à propos !"
+    }
+  }
+}
