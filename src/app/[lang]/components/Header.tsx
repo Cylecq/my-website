@@ -3,7 +3,11 @@ import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import LocaleSwitcher from "./LocalSwitcher";
 
-export default async function Header({ lang }: { lang: Locale }) {
+interface Props {
+  lang: Locale;
+}
+
+async function Header({ lang }: Props) {
   const { navigation } = await getDictionary(lang);
 
   return (
@@ -22,3 +26,5 @@ export default async function Header({ lang }: { lang: Locale }) {
     </header>
   );
 }
+
+export default Header;

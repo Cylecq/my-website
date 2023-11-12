@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { i18n } from "@/i18n.config";
 
-export default function LocaleSwitcher() {
+function LocaleSwitcher() {
   const pathName = usePathname();
 
   const redirectedPathName = (locale: string) => {
@@ -32,3 +32,5 @@ export default function LocaleSwitcher() {
     </ul>
   );
 }
+
+export default LocaleSwitcher;
