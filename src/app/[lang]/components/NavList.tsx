@@ -26,7 +26,7 @@ function NavList({ navigation }: Props) {
   };
 
   const renderNavItem = (href: string, label: string) => (
-    <li className="py-4 md:py-0 md:mr-6">
+    <li className="py-4 bg-white w-full text-center border-b md:py-0 md:mr-6">
       <Link href={href} className="text-sm uppercase w-full hover:text-primary">
         {label}
       </Link>
