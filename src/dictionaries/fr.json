@@ -7,7 +7,9 @@
   },
   "page": {
     "title": {
-      "title": "Cyril Leclercq"
+      "title": "Cyril Leclercq",
+      "subtitle": "Développeur Web",
+      "button": "En savoir plus"
     },
     "about": {
       "title": "À propos",

@@ -7,7 +7,9 @@
   },
   "page": {
     "title": {
-      "title": "Cyril Leclercq"
+      "title": "Cyril Leclercq",
+      "subtitle": "Web Developer",
+      "button": "Learn More"
     },
     "about": {
       "title": "About Us",

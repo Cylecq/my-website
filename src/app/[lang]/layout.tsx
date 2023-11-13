@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 function RootLayout({ children, params }: Props) {
   return (
     <html lang={params.lang}>
-      <body className="font-body" id="top">
+      <body className="font-body text-black" id="top">
         <Header lang={params.lang} />
         <main>{children}</main>
       </body>
