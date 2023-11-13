@@ -6,9 +6,8 @@
     "contact": "Contact"
   },
   "page": {
-    "home": {
-      "title": "Cyril Leclercq",
-      "description": "Bienvenue sur la page d'accueil !"
+    "title": {
+      "title": "Cyril Leclercq"
     },
     "about": {
       "title": "À propos",
