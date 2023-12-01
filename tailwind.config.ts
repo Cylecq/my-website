@@ -13,7 +13,9 @@ const config: Config = {
         body: ["Rubik", "sans-serif"],
       },
       colors: {
-        primary: "#e76f51",
+        primary: "#D33F49", // red
+        // primary: "#8F95D3", // blue
+        // primary: "#619B8A", // green
         black: "#0f0f0f",
       },
     },
