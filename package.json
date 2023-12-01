@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.1",
+    "@react-spring/web": "^9.7.3",
     "negotiator": "^0.6.3",
     "next": "14.0.2",
     "react": "^18",
