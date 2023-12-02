@@ -12,12 +12,12 @@ interface Props {
 
 async function Home({ params: { lang } }: Props) {
   const { page } = await getDictionary(lang);
-  const { title } = page;
+  const { title, about } = page;
 
   return (
     <>
       <Title titleDict={title} />
-      <About />
+      <About aboutDict={about} />
       <CV />
     </>
   );
