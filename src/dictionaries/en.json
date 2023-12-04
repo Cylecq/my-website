@@ -2,7 +2,6 @@
   "navigation": {
     "about": "About",
     "skills": "Skills",
-    "cv": "CV",
     "contact": "Contact"
   },
   "page": {
@@ -14,6 +13,16 @@
     "about": {
       "title": "About",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi illo quidem animi harum officia fugit qui porro accusamus nemo voluptas, nobis ut! Dolores quis incidunt, provident, distinctio dolor iste, quisquam error unde nesciunt culpa velit dolorem debitis sed ratione tempora officia. Numquam harum dignissimos, rem sapiente, exercitationem blanditiis aliquam quae assumenda libero veniam maiores, nesciunt itaque veritatis facilis aspernatur odit magni esse repellat inventore! Optio quae necessitatibus blanditiis maiores."
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "contact": {
+      "title": "Contact",
+      "mailTitle": "By mail ?",
+      "mailButton": "Send me a mail",
+      "cvTitle": "A resume ?",
+      "cvButton": "Download my resume"
     }
   }
 }

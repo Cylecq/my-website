@@ -13,14 +13,14 @@ interface Props {
 
 async function Home({ params: { lang } }: Props) {
   const { page } = await getDictionary(lang);
-  const { title, about } = page;
+  const { title, about, skills, contact } = page;
 
   return (
     <>
       <Title titleDict={title} />
       <About aboutDict={about} />
-      <Skills />
-      <Contact />
+      <Skills skillsDict={skills} />
+      <Contact contactDict={contact} />
     </>
   );
 }
