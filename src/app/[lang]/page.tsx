@@ -2,7 +2,7 @@ import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import Title from "./sections/Title";
 import About from "./sections/About";
-import CV from "./sections/CV";
+import Contact from "./sections/Contact";
 import Skills from "./sections/Skills";
 
 interface Props {
@@ -20,7 +20,7 @@ async function Home({ params: { lang } }: Props) {
       <Title titleDict={title} />
       <About aboutDict={about} />
       <Skills />
-      <CV />
+      <Contact />
     </>
   );
 }

@@ -62,7 +62,6 @@ function NavList({ navigation }: Props) {
       >
         {renderNavItem("#about", navigation.about)}
         {renderNavItem("#skills", navigation.skills)}
-        {renderNavItem("#cv", navigation.cv)}
         {renderNavItem("#contact", navigation.contact)}{" "}
       </ul>
     </>
