@@ -22,7 +22,7 @@ function LocaleSwitcher() {
           <li key={locale}>
             <Link
               href={redirectedPathName(locale)}
-              className="rounded-md border bg-black px-3 py-2 text-white"
+              className={`cursor-pointer ${pathName.split("/")[1] === locale && "underline"} hover:underline`}
             >
               {locale}
             </Link>

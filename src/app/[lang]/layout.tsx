@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 interface Props {
   children: React.ReactNode;
@@ -25,6 +26,7 @@ function RootLayout({ children, params }: Props) {
       <body className="font-body text-black" id="top">
         <Header lang={params.lang} />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
