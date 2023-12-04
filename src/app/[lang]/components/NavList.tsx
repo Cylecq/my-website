@@ -9,7 +9,6 @@ type Props = {
   navigation: {
     about: string;
     skills: string;
-    cv: string;
     contact: string;
   };
 };
