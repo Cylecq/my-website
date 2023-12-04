@@ -54,7 +54,7 @@ function Skills({ skillsDict }: Props) {
   return (
     <section className="h-screen flex flex-col gap-2 justify-center items-center border">
       <div className="h-[25%] w-full flex items-end justify-start">
-        <h2 className="text-2xl font-display px-2">{skillsDict.title}</h2>
+        <h2 className="text-2xl font-display px-4">{skillsDict.title}</h2>
       </div>
 
       {Object.entries(skillsData).map(([category, skills]) => (
