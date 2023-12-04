@@ -22,7 +22,8 @@
       "mailTitle": "By mail ?",
       "mailButton": "Send me a mail",
       "cvTitle": "A resume ?",
-      "cvButton": "Download my resume"
+      "cvButton": "Download my resume",
+      "networksTitle": "My networks"
     }
   }
 }

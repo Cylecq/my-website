@@ -22,7 +22,8 @@
       "mailTitle": "Un mail ?",
       "mailButton": "Envoyer un mail",
       "cvTitle": "Un CV ?",
-      "cvButton": "Télécharger mon CV"
+      "cvButton": "Télécharger mon CV",
+      "networksTitle": "Mes réseaux"
     }
   }
 }
