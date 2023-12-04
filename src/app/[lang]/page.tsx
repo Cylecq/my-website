@@ -3,6 +3,7 @@ import { getDictionary } from "@/lib/dictionary";
 import Title from "./sections/Title";
 import About from "./sections/About";
 import CV from "./sections/CV";
+import Skills from "./sections/Skills";
 
 interface Props {
   params: {
@@ -18,6 +19,7 @@ async function Home({ params: { lang } }: Props) {
     <>
       <Title titleDict={title} />
       <About aboutDict={about} />
+      <Skills />
       <CV />
     </>
   );
