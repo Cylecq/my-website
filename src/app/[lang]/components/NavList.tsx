@@ -39,10 +39,15 @@ function NavList({ navigation }: Props) {
     }
   };
 
+  const handleClick = (href: string) => {
+    setOpen(false);
+    scrollToSection(href);
+  };
+
   const renderNavItem = (href: string, label: string) => (
     <li className="py-4 bg-white w-full text-center border-b md:py-0 md:mr-6">
       <button
-        onClick={() => scrollToSection(href)}
+        onClick={() => handleClick(href)}
         className="text-sm uppercase w-full hover:text-primary"
       >
         {label}
