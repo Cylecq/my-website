@@ -54,9 +54,9 @@ function Skills({ skillsDict }: Props) {
   return (
     <section
       id="skills"
-      className="h-screen flex flex-col gap-2 justify-center items-center border"
+      className="h-screen flex flex-col gap-2 justify-center items-center"
     >
-      <div className="h-[25%] w-full flex items-end justify-start">
+      <div className="h-[12%] w-full flex items-end justify-start">
         <h2 className="text-2xl font-display px-4">{skillsDict.title}</h2>
       </div>
 
@@ -66,7 +66,7 @@ function Skills({ skillsDict }: Props) {
           className="h-[25%] border w-11/12 bg-white border-primary shadow-inner z-10"
         >
           <div className="h-[30%] flex justify-center items-center">
-            <h3 className="text-xl">{category}</h3>
+            <h3 className="text-2xl">{category}</h3>
           </div>
           <div className="flex w-full h-[70%] justify-around">
             {skills.map((skill, index) => (
