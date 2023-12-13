@@ -25,6 +25,20 @@ function NavList({ navigation }: Props) {
     }
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    const menu = document.querySelector("#toggled-menu");
+    const menuBtn = document.querySelector("#menu-btn");
+
+    if (menu && menuBtn) {
+      if (
+        !menu.contains(event.target as Node) &&
+        !menuBtn.contains(event.target as Node)
+      ) {
+        setOpen(false);
+      }
+    }
+  };
+
   const renderNavItem = (href: string, label: string) => (
     <li className="py-4 bg-white w-full text-center border-b md:py-0 md:mr-6">
       <button
@@ -46,6 +60,12 @@ function NavList({ navigation }: Props) {
       menu.classList.toggle("translate-y-0", open);
       menuBtn.setAttribute("aria-expanded", expandedValue);
     }
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, [open]);
 
   return (
