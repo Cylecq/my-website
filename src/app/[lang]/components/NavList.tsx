@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import burger from "../../../../public/svg/burger.svg";
 import cross from "../../../../public/svg/cross.svg";
+import scrollToSection from "@/utils/scrollToSection";
 
 type Props = {
   navigation: {
@@ -26,9 +27,12 @@ function NavList({ navigation }: Props) {
 
   const renderNavItem = (href: string, label: string) => (
     <li className="py-4 bg-white w-full text-center border-b md:py-0 md:mr-6">
-      <Link href={href} className="text-sm uppercase w-full hover:text-primary">
+      <button
+        onClick={() => scrollToSection(href)}
+        className="text-sm uppercase w-full hover:text-primary"
+      >
         {label}
-      </Link>
+      </button>
     </li>
   );
 

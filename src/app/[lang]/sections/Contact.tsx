@@ -1,10 +1,9 @@
-import Image from 'next/image';
-import React from 'react'
-import mail from '../../../../public/svg/mail.svg';
-import download from '../../../../public/svg/download.svg';
-import github from '../../../../public/svg/github.svg';
-import linkedin from '../../../../public/svg/linkedin.svg';
-
+import Image from "next/image";
+import React from "react";
+import mail from "../../../../public/svg/mail.svg";
+import download from "../../../../public/svg/download.svg";
+import github from "../../../../public/svg/github.svg";
+import linkedin from "../../../../public/svg/linkedin.svg";
 
 type Props = {
   contactDict: {
@@ -17,9 +16,9 @@ type Props = {
   };
 };
 
-function CV({ contactDict }: Props) {
+function Contact({ contactDict }: Props) {
   return (
-    <section className="h-screen flex justify-center items-center">
+    <section id="contact" className="h-screen flex justify-center items-center">
       <div className="bg-white w-11/12 py-4 px-2 z-10 border border-primary shadow-inner flex flex-col justify-center items-center gap-6">
         <h2 className="font-display text-2xl mb-2 self-start">
           {contactDict.title}
@@ -46,10 +45,18 @@ function CV({ contactDict }: Props) {
           <div className="w-full flex flex-col items-center gap-2">
             <h3>{contactDict.networksTitle}</h3>
             <div className="w-full flex justify-around">
-              <a target='blank' className='shadow-2xl' href="https://github.com/Cylecq">
+              <a
+                target="blank"
+                className="shadow-2xl"
+                href="https://github.com/Cylecq"
+              >
                 <Image src={github} alt="github" width={30} height={30} />
               </a>
-              <a target='blank' className='shadow-2xl' href="https://www.linkedin.com/in/cylecq/">
+              <a
+                target="blank"
+                className="shadow-2xl"
+                href="https://www.linkedin.com/in/cylecq/"
+              >
                 <Image src={linkedin} alt="linkedin" width={30} height={30} />
               </a>
             </div>
@@ -60,4 +67,4 @@ function CV({ contactDict }: Props) {
   );
 }
 
-export default CV
+export default Contact;
