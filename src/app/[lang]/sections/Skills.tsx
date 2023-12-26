@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import react from "../../../../public/svg/react.svg";
 import reactNative from "../../../../public/svg/react-native.svg";
@@ -15,32 +14,34 @@ import docker from "../../../../public/svg/docker.svg";
 import githubActions from "../../../../public/svg/github-actions.svg";
 import linux from "../../../../public/svg/linux.svg";
 import nginx from "../../../../public/svg/nginx.svg";
+import SkillCard from "../components/SkillCard";
 
 type Skill = {
   src: string;
   alt: string;
+  name: string;
 };
 
 const skillsData: Record<string, Skill[]> = {
   Frontend: [
-    { src: react, alt: "react" },
-    { src: reactNative, alt: "react native" },
-    { src: nextjs, alt: "nextjs" },
-    { src: tailwind, alt: "tailwind" },
+    { src: react, alt: "react", name: "React" },
+    { src: reactNative, alt: "react native", name: "React Native" },
+    { src: nextjs, alt: "nextjs", name: "Next.js" },
+    { src: tailwind, alt: "tailwind", name: "Tailwind" },
   ],
   Backend: [
-    { src: nodejs, alt: "node js" },
-    { src: express, alt: "express" },
-    { src: graphql, alt: "graphql" },
-    { src: firebase, alt: "firebase" },
-    { src: mysql, alt: "mysql" },
-    { src: postgresql, alt: "postgresql" },
+    { src: nodejs, alt: "node js", name: "Node.js" },
+    { src: express, alt: "express", name: "Express" },
+    { src: graphql, alt: "graphql", name: "GraphQL" },
+    { src: firebase, alt: "firebase", name: "Firebase" },
+    { src: mysql, alt: "mysql", name: "MySQL" },
+    { src: postgresql, alt: "postgresql", name: "PostgreSQL" },
   ],
   DevOps: [
-    { src: docker, alt: "docker" },
-    { src: linux, alt: "linux" },
-    { src: nginx, alt: "nginx" },
-    { src: githubActions, alt: "github actions" },
+    { src: docker, alt: "docker", name: "Docker" },
+    { src: linux, alt: "linux", name: "Linux" },
+    { src: nginx, alt: "nginx", name: "Nginx" },
+    { src: githubActions, alt: "github actions", name: "GitHub Actions" },
   ],
 };
 
@@ -61,25 +62,7 @@ function Skills({ skillsDict }: Props) {
       </div>
 
       {Object.entries(skillsData).map(([category, skills]) => (
-        <div
-          key={category}
-          className="h-[25%] border w-11/12 bg-white border-primary shadow-inner z-10"
-        >
-          <div className="h-[30%] flex justify-center items-center">
-            <h3 className="text-2xl">{category}</h3>
-          </div>
-          <div className="flex w-full h-[70%] justify-around">
-            {skills.map((skill, index) => (
-              <Image
-                key={index}
-                src={skill.src}
-                alt={skill.alt}
-                height={40}
-                width={40}
-              />
-            ))}
-          </div>
-        </div>
+        <SkillCard key={category} category={category} skills={skills} />
       ))}
     </section>
   );
