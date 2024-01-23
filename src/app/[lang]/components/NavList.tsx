@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import burger from "../../../../public/svg/burger.svg";
 import cross from "../../../../public/svg/cross.svg";
