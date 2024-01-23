@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import blank from "../../../../public/png/blank.png";
 
 type Skill = {
   src: string;
@@ -16,8 +17,8 @@ type Props = {
 function SkillCard({ category, skills }: Props) {
   const [open, setOpen] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState<Skill>({
-    src: "",
-    alt: "",
+    src: blank as any,
+    alt: blank as any,
     name: "",
   });
 
@@ -25,7 +26,7 @@ function SkillCard({ category, skills }: Props) {
     setSelectedSkill(skill);
     setOpen(true);
     setTimeout(() => {
-      setSelectedSkill({ src: "", alt: "", name: "" });
+      setSelectedSkill({ src: blank as any, alt: blank as any, name: "" });
       setOpen(false);
     }, 2000);
   };
