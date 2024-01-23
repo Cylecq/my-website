@@ -55,15 +55,16 @@ function Skills({ skillsDict }: Props) {
   return (
     <section
       id="skills"
-      className="h-screen flex flex-col gap-2 justify-center items-center"
+      className="h-screen flex flex-col gap-2 justify-center items-center lg:w-4/5 lg:mx-auto xl:w-3/5 xl:mx-auto"
     >
-      <div className="h-[12%] w-full flex items-end justify-start">
+      <div className="w-full flex items-end justify-start">
         <h2 className="text-2xl font-display px-4">{skillsDict.title}</h2>
       </div>
-
-      {Object.entries(skillsData).map(([category, skills]) => (
-        <SkillCard key={category} category={category} skills={skills} />
-      ))}
+      <div className="w-full h-[480px] flex flex-col gap-2 lg:flex-row lg:h-[280px] lg:gap-4 xl:gap-8">
+        {Object.entries(skillsData).map(([category, skills]) => (
+          <SkillCard key={category} category={category} skills={skills} />
+        ))}
+      </div>
     </section>
   );
 }

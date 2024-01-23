@@ -33,7 +33,7 @@ function SkillCard({ category, skills }: Props) {
   return (
     <div
       key={category}
-      className="h-[25%] border w-11/12 bg-white border-primary shadow-inner z-10"
+      className="h-full border w-11/12 bg-white border-primary shadow-inner z-10 mx-auto"
     >
       <div className={`${open ? "h-0" : "h-full"} transition-all duration-300`}>
         <div className="flex justify-center items-center h-[30%]">

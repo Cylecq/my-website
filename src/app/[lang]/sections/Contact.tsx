@@ -25,7 +25,10 @@ function Contact({ contactDict }: Props) {
   );
 
   return (
-    <section id="contact" className="h-screen flex justify-center items-center">
+    <section
+      id="contact"
+      className="h-screen flex justify-center items-center sm:w-4/5 sm:mx-auto lg:w-3/5 lg:mx-auto xl:w-2/5 xl:mx-auto"
+    >
       <div className="bg-white w-11/12 py-4 px-2 z-10 border border-primary shadow-inner flex flex-col justify-center items-center gap-6">
         <h2 className="font-display text-2xl mb-2 self-start">
           {contactDict.title}
