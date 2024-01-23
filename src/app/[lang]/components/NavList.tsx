@@ -48,7 +48,7 @@ function NavList({ navigation }: Props) {
     <li className="py-4 bg-white w-full text-center border-b md:py-0 md:mr-6">
       <button
         onClick={() => handleClick(href)}
-        className="text-sm uppercase w-full hover:text-primary"
+        className="text-sm uppercase w-full hover:text-primary transition-all"
       >
         {label}
       </button>
