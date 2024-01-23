@@ -51,7 +51,11 @@ function SkillCard({ category, skills }: Props) {
           }  justify-around w-full h-[70%]`}
         >
           {skills.map((skill, index) => (
-            <button key={index} onClick={() => handleClick(skill)}>
+            <button
+              key={index}
+              onClick={() => handleClick(skill)}
+              className="h-[60px] my-auto border-b border-white hover:border-primary transition-all duration-300"
+            >
               <Image src={skill.src} alt={skill.alt} height={40} width={40} />
             </button>
           ))}
