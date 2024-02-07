@@ -28,7 +28,7 @@ function SkillCard({ category, skills }: Props) {
     setTimeout(() => {
       setSelectedSkill({ src: blank as any, alt: blank as any, name: "" });
       setOpen(false);
-    }, 2000);
+    }, 1500);
   };
 
   return (
