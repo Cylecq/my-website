@@ -1,18 +1,10 @@
 "use client";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import scrollToSection from "@/utils/scrollToSection";
-import ChevronDown from "../../../../public/svg/chevron-down.svg";
+import ChevronDown from "../../../public/svg/chevron-down.svg";
 
-type Props = {
-  titleDict: {
-    title: string;
-    subtitle: string;
-    button: string;
-  };
-};
-
-function LearnMoreBtn({ titleDict }: Props) {
+function LearnMoreBtn() {
   return (
     <button
       onClick={() => scrollToSection("#about")}
@@ -20,7 +12,7 @@ function LearnMoreBtn({ titleDict }: Props) {
     >
       <span className="relative z-10 flex items-center justify-center gap-4">
         <Image src={ChevronDown} alt="Chevron Down" height={15} width={15} />
-        {titleDict.button}
+        En savoir plus
         <Image src={ChevronDown} alt="Chevron Down" height={15} width={15} />
       </span>
     </button>
