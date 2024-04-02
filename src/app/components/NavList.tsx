@@ -1,19 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import burger from "../../../../public/svg/burger.svg";
-import cross from "../../../../public/svg/cross.svg";
 import scrollToSection from "@/utils/scrollToSection";
+import burger from "../../../public/svg/burger.svg";
+import cross from "../../../public/svg/cross.svg";
 
-type Props = {
-  navigation: {
-    about: string;
-    skills: string;
-    contact: string;
-  };
-};
-
-function NavList({ navigation }: Props) {
+function NavList() {
   const [open, setOpen] = useState(false);
 
   const renderNavIcon = () => {
@@ -87,9 +79,9 @@ function NavList({ navigation }: Props) {
         id="toggled-menu"
         className="w-full absolute top-full left-0 -translate-y-full -z-10 border-b border-gray-200 flex flex-col items-center transition-all duration-500 md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row"
       >
-        {renderNavItem("#about", navigation.about)}
-        {renderNavItem("#skills", navigation.skills)}
-        {renderNavItem("#contact", navigation.contact)}{" "}
+        {renderNavItem("#about", "Résumé")}
+        {renderNavItem("#skills", "Compétences")}
+        {renderNavItem("#contact", "Contact")}
       </ul>
     </>
   );

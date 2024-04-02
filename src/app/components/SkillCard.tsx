@@ -1,7 +1,7 @@
 "use client";
+import React, { useState } from "react";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import blank from "../../../../public/png/blank.png";
+import blank from "../../../public/png/blank.png";
 
 type Skill = {
   src: string;

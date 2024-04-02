@@ -2,9 +2,7 @@
 import React from "react";
 import scrollToSection from "@/utils/scrollToSection";
 
-type Props = {};
-
-function Logo({}: Props) {
+function Logo() {
   return (
     <button
       onClick={() => scrollToSection("#title")}
