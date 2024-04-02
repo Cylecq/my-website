@@ -1,6 +1,6 @@
-# My Portfolio
+# My Website
 
-Welcome to my web development portfolio! This project showcases my skills, projects, and experiences in web development. It is built using Next.js, a powerful React framework for building modern web applications.
+Welcome to my web development website! This project showcases my skills, projects, and experiences in web development. It is built using Next.js, a powerful React framework for building modern web applications.
 
 ## Technologies Used
 
@@ -9,7 +9,7 @@ Welcome to my web development portfolio! This project showcases my skills, proje
 
 ## Features
 
-- **Responsive Design**: The portfolio is designed to be fully responsive, ensuring optimal viewing experience across different devices and screen sizes.
+- **Responsive Design**: The website is designed to be fully responsive, ensuring optimal viewing experience across different devices and screen sizes.
 - **About Me Section**: Introduce yourself, your skills, and your experiences in web development.
 - **Skills Section** : Expose your skills through icons and smooth animation.
 - **Contact Information**: Provide ways for visitors to get in touch with you, such as email address and social media links.
@@ -18,14 +18,9 @@ Welcome to my web development portfolio! This project showcases my skills, proje
 
 1. **Clone the Repository**: Clone this repository to your local machine using `git clone`.
 2. **Install Dependencies**: Run `npm install` , `yarn install` or `bun install` to install the required dependencies.
-3. **Run the Development Server**: Use `npm run dev`, `yarn dev` or `bun dev` to start the development server. The portfolio should now be running locally on `http://localhost:3000`.
+3. **Run the Development Server**: Use `npm run dev`, `yarn dev` or `bun dev` to start the development server. The website should now be running locally on `http://localhost:3000`.
 
 ## Usage
 
 - Customize the content of the portfolio by editing the pages in the `app` directory.
 - Personalize the design and layout to match your preferences and branding.
-
-## Deployment
-
-- Deploy your portfolio to hosting platforms like Vercel, Netlify, or GitHub Pages for public access.
-- Ensure to configure environment variables and settings required for deployment.
