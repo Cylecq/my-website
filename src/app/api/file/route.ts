@@ -11,7 +11,7 @@ export async function GET() {
     "Content-Disposition",
     'attachment; filename="CV_Cyril_Leclercq.pdf"'
   );
-  headers.append("Content-Type", "image/png");
+  headers.append("Content-Type", "application/pdf");
 
   return new Response(buffer, {
     headers,
