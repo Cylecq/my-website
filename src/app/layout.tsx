@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Cyril Leclercq - Développeur Web Fullstack",
   description:
     "Portfolio de Cyril Leclercq, développeur web fullstack. Typescript, React, Next.js, Node.js...",
+  applicationName: "Cyril Leclercq",
   authors: [{ name: "Cyril Leclercq" }],
   creator: "Cyril Leclercq",
   keywords: [
