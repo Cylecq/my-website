@@ -25,7 +25,7 @@ function Contact() {
         <div className="flex flex-col gap-10">
           <div className="w-full flex flex-col items-center gap-2">
             <h3>Un mail ?</h3>
-            <a href="mailto:leclercq.cyril06@gmail.com">
+            <a href="mailto:contact@cyril-leclercq.com">
               <button className="relative h-[50px] w-56 overflow-hidden border border-primary bg-white text-primary shadow-2xl transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-primary before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-primary after:duration-500 hover:text-black hover:shadow-primary hover:before:h-2/4 hover:after:h-2/4 hover:border-black">
                 <span className="relative z-10 flex items-center justify-center gap-4">
                   Envoyer un mail
