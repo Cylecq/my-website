@@ -1,3 +1,13 @@
+export type Project = {
+  name: string;
+  description: string;
+  imgSrc: string;
+  href: string;
+  icon: string;
+  github: string;
+  technologies: string[];
+};
+
 export const projects = [
   {
     name: "Kali Ma Sud - Portfolio",
