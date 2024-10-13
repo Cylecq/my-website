@@ -81,6 +81,7 @@ function NavList() {
       >
         {renderNavItem("#about", "Résumé")}
         {renderNavItem("#skills", "Compétences")}
+        {renderNavItem("#projects", "Projets")}
         {renderNavItem("#contact", "Contact")}
       </ul>
     </>
