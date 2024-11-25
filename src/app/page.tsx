@@ -4,7 +4,7 @@ import Contact from "./sections/Contact";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 
-async function Home() {
+function Home() {
   return (
     <>
       <Title />
