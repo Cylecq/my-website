@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Welcome to My Website"
+    "Hero": {
+      "hello": "Hello, I'm",
+      "name": "Cyril Leclercq",
+      "title": "Web Developer",
+      "location": "Based in Montpellier, France"
+    }
   }
 }

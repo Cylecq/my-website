@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Bienvenue sur Mon Site Web"
+    "Hero": {
+      "hello": "Bonjour, je suis",
+      "name": "Cyril Leclercq",
+      "title": "Développeur Web",
+      "location": "Basé à Montpellier, France"
+    }
   }
 }
